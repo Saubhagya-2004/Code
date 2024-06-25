@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Queries</title>
+    <style>
+        .box{
+            font-size:15px;
+            border-style:groove;
+            background-color: aqua;
+            color: red;
+            text-align: center;
+            display: none;/*display-none means full white the entire screen*/
+        }
+        @media(max-width:100px){ /*@media means if we resize our page then letter will be shown ex-if i want to short my page like a mobile then its depend upon max-width in range size*/
+            #box3{
+                display: block;
+                background-color: blanchedalmond;
+            }
+        }
+        @media(min-width:200px) and (max-width:300px){ /*max min means in range */
+            #box2{
+                display: block;
+                background-color: hotpink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">I am boy</div>
+    <div class="box" id="box2">I am a genious</div>
+    <div class="box" id="box3">I always love animal</div>
+    <div class="box" id="box4">I love u</div>
+</body>
+</html>

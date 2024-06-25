@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selector
+    </title>
+    <style>
+        header::before {
+            content: "";
+            background: url("https://images.unsplash.com/photo-1711636418389-1ee93ebd56fb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8") no-repeat center center/cover;
+            opacity: 0.5;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+
+        }
+        body{
+            background-color: rgb(27, 30, 30);
+            color: blanchedalmond;
+            
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            font-size: 15px;
+            list-style: none;
+            padding: 20px 23px;
+            
+        }
+section{
+    height: 344px;
+    font-size: 23px;
+    padding: 0px;
+    margin: 5px 23px;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+}
+/* section::before{
+    content: "This is a content";
+} */
+h3{
+    font-size: 4rem;
+    opacity: 1;
+}
+p{
+    text-align: center;
+    opacity: 1;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <ul class="navigation">
+            <li class="item">Home </li>
+            <li class="item">About</li>
+            <li class="item">service</li>
+            <li class="item">contact</li>
+        </ul></nav>
+        <section>
+            <h3>Welcome to coding world</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, corporis. Corrupti, velit.</p>
+        </section>
+    </header>
+    <hr>
+</body>
+</html>

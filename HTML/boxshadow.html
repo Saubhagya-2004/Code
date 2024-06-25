@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and text shadow</title>
+    <style>
+.container{
+    display: flex;
+}
+.card{
+    padding: 20px 23px;
+    /* border: 3px solid aqua; */
+    margin: 23px 10px;
+    background-color: azure;
+    /* box-shadow: 12px 10px yellow;        box shadow use to comes shadow of a box and here 12px is x and 10px is y */
+    /* box-shadow: -10px -9px green;   */
+       /*if u wantt to shadow of a box at upper side then u can use(-) sign*/
+       /* box-shadow: 10px 14px 55px yellow; */
+       /* if we are trying to use 3 px then this box shadow will be blour,itz depend upon third px value */
+       box-shadow: inset 8px 13px  hotpink;
+       /* inset tag is use to increase inner side of a shadow */
+
+}
+.card h2{
+    text-shadow: 5px 4px rgb(192, 243, 226);
+    /* text shadow used to background duplicate textlll */
+
+}
+    </style>
+</head>
+<body><div class="container">
+    <div class="card" id="card1"> <h2>card1</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe error minus ab hic ipsam obcaecati deserunt vero a facilis dolores voluptates fugit ex fugiat, qui ut sequi fuga impedit officiis.</p></div>
+    <div class="card" id="card2"><h2>caed 2</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum veniam nesciunt? Eaque exercitationem ut magni modi? Rerum, saepe, possimus id temporibus itaque nemo commodi, fugit ipsum repudiandae sapiente consectetur!</p></div>
+    <div class="card" id="card3"><h2>caed 3</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, earum exercitationem ipsum illo laudantium molestiae possimus dolores excepturi, expedita modi voluptatum omnis magni suscipit adipisci nihil cumque nemo autem error?</p></div></div>
+</body>
+</html>

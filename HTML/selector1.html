@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selector</title>
+    <style>h1{
+        background-color: rgb(235, 235, 151);
+        color:rgb(99, 168, 228);
+        font-weight:bold;
+        text-align: center;
+        
+    }
+    div li p{  /*only it indicates div ul and li p not another div*/
+        background-color: antiquewhite;
+        color: aquamarine;
+        font-size:50px;
+    }
+    div + p{  /* div +p means div with p tag then it can be useed*/
+        color:violet;
+        background-color:darkturquoise;
+    }
+        </style>
+</head>
+<body>
+    <h1>This css file know more about selector</h1>
+    <div class="container">
+        <div class="cont">
+            <ul>
+                <li class="para"><p>This is my own paragraph</p></li>
+            </ul>
+            <p>This is another paragraph</p>
+        </div>
+        <p>This is new paragraph</p>
+    </div>
+    <p>This is outer most paragraph</p>
+</body>
+</html>
