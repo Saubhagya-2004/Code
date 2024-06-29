@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable</title>
+    <style>
+        :root {  /*if we will use root tag then we can acess all clss in this --(symbol)*/
+            /* To make it work, we can write it again or can use the --root property. */
+            --primary-color: blue;
+            --danger-color: violet;
+        }
+
+        .box {
+
+            width: 200px;
+            height: 150px;
+            background-color: var(--primary-color);
+            /*we want to create a variable for the background color. We can create it by ‘--’ symbol. Variables in CSS helps us to assign the same properties to different elements. */
+            border: 3px solid rgb(234, 144, 9);
+            box-shadow: 4px 4px 100px rgb(223, 6, 104);
+            margin: 2px 8px;
+        }
+
+        .container {
+            --box-color: rgb(237, 7, 237);
+            display: flex;
+            background-color: var(--box-color);
+            background-color: var(--danger-color);
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            max-width: 334px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

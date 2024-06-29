@@ -13,23 +13,24 @@
             /* flex properties for flex container */
             /* intialize the co tainer as a flex */
             /* flex-direction: column ;
-            flex-direction: row-reverse;
-            flex-direction: column-reverse; */
+            flex-direction: row-reverse ||boxes are comes in reverse order;
+            flex-direction: column-reverse||boxes are comes in reverse order; */
             /* by default is row */
-           flex-direction: row; /* flex-wrap: wrap;
-            justify-content: center;
-            justify-content:space-between;
-            justify-content: space-evenly; */
-            /* align-items: center;
+           flex-direction: row; 
+            /* justify-content: center;
+            justify-content:space-between || create space each 2 box;
+            justify-content: space-evenly; */ 
+            /* align-items: center || it goes vertically center;
             align-items: flex-start; */
+            flex-wrap: wrap;
 
         }
         #item1{
-            /* which have highest order then this goes to last position: ; */
+            /* which have highest order then this goes to last position of the box: ; */
             order: 2;
         }
         #item2{
-            order: 20;
+            order: 20; /*  this item will goes to the last position bcz its order high */
         }
         #item3{
             order: 3;
@@ -40,8 +41,8 @@
         }
         
         #item4{
-            flex: 2 2 300px;
-            align-self: first end;
+            flex: 2 2 300px;   /*here 2=flex grow,2=flex shrink,300px=flex basis */
+            align-self:  flex-end;
         }
         
         #item5{
