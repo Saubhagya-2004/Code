@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+</head>
+<body>
+    <h2>This is Form</h2>
+    <form action="backend.phhp">
+    <label for="name">Name</label>
+    <div><input type="text" id="name" name="myname"></div><br>
+    <label for="roll">Rollno</label>
+    <div><input type="number" id="roll" name="myroll"></div><br>
+    <label for="date">Date</label>
+   <div><input type="date" id="date" name="mydate"></div><br>
+   <label for="mail">Mail</label>
+   <div><input type="email" id="mail" name="Mymail"></div><br>
+   <div>
+    Gender Male<input type="radio" name="MyGender">Female<input type="radio" name="MyGender">Other<input type="radio" name="MyGender">
+   </div><br>
+   <label for="eligible">Are you eligible</label>
+   <div><input type="checkbox" id="eligible" name="myeligible"></div><br>
+   <label for="age">Age</label>
+   <div><input type="number" name="myage" id="age"></div><br>
+   <div>Write about yourself <br><textarea name="mytext" rows="10" cols="50" ></textarea></div>
+  <div></div> <label for="car">Car</label>
+    <select name="mycar" id="car">
+        <option value="hyn">Hyundai</option>
+        <option value="audi" selected>Audi</option>
+        <option value="bmw">BMW</option>
+    </select></div><br>
+    <div>Submit <input type="submit" name="mysubmit"></div>
+    <div>Reset<input type="reset" name="Myreset" ></div><br>
+
+   </form>
+
+</body>
+</html>

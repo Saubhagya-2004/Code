@@ -1,9 +1,7 @@
 import java.util.Scanner;
-
 public class Searchoperation2d {
     public static boolean operation(int matrix[][],int key){
         int n=matrix.length,m=matrix[0].length;
-
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(matrix[i][j]==key){
@@ -35,6 +33,7 @@ public class Searchoperation2d {
             }
             System.out.println();
         }
+        System.out.println("Enter key value");
        int key=obj.nextInt();
        operation(matrix, key);
     }

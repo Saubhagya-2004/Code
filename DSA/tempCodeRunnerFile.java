@@ -1,1 +1,1 @@
-[
+System.err.println("Enter array size");
