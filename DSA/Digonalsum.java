@@ -16,3 +16,4 @@ public class Digonalsum {
         System.out.print(The_digonal(num));
     }
 }
+
